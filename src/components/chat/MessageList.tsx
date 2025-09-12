@@ -1,4 +1,4 @@
-import { Box, List, ListItem, Stack, Avatar, Typography, Paper } from '@mui/material';
+import { Box, List, ListItem, Stack, Avatar,  Paper } from '@mui/material';
 import { useChatStore } from '../../store/chatStore';
 import MessageBubble from './MessageBubble';
 

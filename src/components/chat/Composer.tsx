@@ -23,7 +23,7 @@ import {
   
     const send = useChatStore((s) => s.sendUserMessage);
     const appendAssistant = useChatStore((s) => s.appendAssistantMessage);
-    const start = useChatStore((s) => s.startNewChat);
+    
     const navigate = useNavigate();
   
     const handleFiles = (fileList: FileList | null) => {
