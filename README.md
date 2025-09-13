@@ -49,6 +49,8 @@ git clone https://github.com/SaLiL-SinGh14/inteliq-chat.git
 
 # Navigate into the project folder
 cd inteliq-chat
+# Install dependencies
+npm install
 npm run dev
 npm run build
 npm run preview
@@ -74,7 +76,14 @@ src/
 └── utils/               # Utility functions
     └── placeholders.ts
 
+📌 How It Works
+
+On / → Displays New Chat Screen with 3 prompt cards and a composer.
+
+Selecting a card or sending a message → Creates a new chat and navigates to /c/:id.
+
+/c/:id → Shows Active Chat View with sidebar + topbar + messages.
+
+State stored in memory via Zustand (no persistence on refresh yet).
 
 
-# Install dependencies
-npm install
