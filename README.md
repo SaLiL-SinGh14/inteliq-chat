@@ -38,6 +38,35 @@ It provides a clean interface for creating new chats, sending messages, and mana
 ![Active Chat](./screenshots/active-chat.png)
 
 ---
+## 📌 How It Works
+
+- On `/` → Displays **New Chat Screen** with 3 prompt cards and a composer.  
+- Selecting a card or sending a message → Creates a **new chat** and navigates to `/c/:id`.  
+- `/c/:id` → Shows **Active Chat View** with sidebar + topbar + messages.  
+- State stored in memory via **Zustand** (*no persistence on refresh yet*).  
+
+---
+
+## ⚖️ Challenges & Trade-offs
+
+During development, a few challenges and ambiguities came up:
+
+- **State Persistence**  
+  Currently, chat state is only stored in memory (Zustand). On page refresh, all chats are lost.  
+  👉 *Trade-off:* This kept the implementation simple and fast for a prototype, but persistence (LocalStorage / Database) can be added later.
+
+- **UI Responsiveness**  
+  Ensuring the layout works well across desktop and mobile required multiple adjustments in Material UI.  
+  👉 *Trade-off:* Prioritized desktop-first design for faster development; mobile optimizations are planned.
+
+- **Routing Decisions**  
+  Choosing between a single-page stateful view vs. multi-route navigation (`/c/:id`).  
+  👉 *Trade-off:* Opted for multi-route navigation for scalability (easier to add features like chat history or user profiles later).
+
+- **Attachment & Media Handling**  
+  Currently only text messages are supported.  
+  👉 *Trade-off:* Skipped file upload initially to focus on chat flow; can be added as a future enhancement.  
+
 
 ## ⚙️ Installation & Setup
 
@@ -76,14 +105,5 @@ src/
 └── utils/               # Utility functions
     └── placeholders.ts
 
-📌 How It Works
-
-On / → Displays New Chat Screen with 3 prompt cards and a composer.
-
-Selecting a card or sending a message → Creates a new chat and navigates to /c/:id.
-
-/c/:id → Shows Active Chat View with sidebar + topbar + messages.
-
-State stored in memory via Zustand (no persistence on refresh yet).
 
 
