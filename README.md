@@ -29,15 +29,18 @@ It provides a clean interface for creating new chats, sending messages, and mana
 
 ## 📸 Screenshots
 
-👉 Add your project screenshots here (store them in a `screenshots/` folder):  
-
 ### New Chat Screen
-![New Chat Screen](./screenshots/new-chat.png)
+
+<img width="1920" height="1080" alt="Screenshot (57)" src="https://github.com/user-attachments/assets/7e858d28-3ebb-41ab-8e21-c065f9ed9f32" />
+
+
+
 
 ### Active Chat View
-![Active Chat](./screenshots/active-chat.png)
 
----
+
+---<img width="1920" height="1080" alt="Screenshot (58)" src="https://github.com/user-attachments/assets/6cd89034-1b36-48d2-b0f3-c9a9bdc88b02" />
+
 ## 📌 How It Works
 
 - On `/` → Displays **New Chat Screen** with 3 prompt cards and a composer.  
